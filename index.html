@@ -39,46 +39,46 @@
       <div class="content-wrapper">
         <div class="portfolio-items-wrapper">
 
-          <div class="portfolio-item-wrapper">
-            <div class="portfolio-img-bg" style="background-image:url(images/image.png)"></div>
+          <div id="1" class="portfolio-item-wrapper">
 
+            <div class="portfolio-img-bg" style="background-image:url(images/image1.jpg)"></div>
               <div class="img-text-wrapper">
                 <div class="logo-wrapper">
-                  <img src="images/logos/logo.png">
+                  <img src="images/logos/logo1.png">
                 </div>
 
                 <div class="subtitle">
-                  The quick brown fox jumps over the lazy dog.
+                  Neural Network Hyperparameter Optimization with Evolutionary Algorithms
                 </div>
 
               </div>
             </div>
 
-          <div class="portfolio-item-wrapper">
-              <div class="portfolio-img-bg" style="background-image:url(images/image.png)"></div>
+          <div id="2" class="portfolio-item-wrapper">
+              <div class="portfolio-img-bg" style="background-image:url(images/image2.jpg)"></div>
 
                 <div class="img-text-wrapper">
                   <div class="logo-wrapper">
-                    <img src="images/logos/logo.png">
+                    <img src="images/logos/logo2.png">
                   </div>
 
                   <div class="subtitle">
-                    The quick brown fox jumps over the lazy dog.
+                    Support Vector Machines vs. Deep Learning on Speech Emotion Classification
                   </div>
 
                 </div>
               </div>
 
-          <div class="portfolio-item-wrapper">
-              <div class="portfolio-img-bg" style="background-image:url(images/image.png)"></div>
+          <div id="3" class="portfolio-item-wrapper">
+              <div class="portfolio-img-bg" style="background-image:url(images/image3.jpg)"></div>
 
                 <div class="img-text-wrapper">
                   <div class="logo-wrapper">
-                    <img src="images/logos/logo.png" alt="">
+                    <img src="images/logos/logo3.png" alt="">
                   </div>
 
                   <div class="subtitle">
-                    The quick brown fox jumps over the lazy dog.
+                    COVID-19 Network Transmission Analysis
                   </div>
                 </div>
               </div>
@@ -99,6 +99,24 @@
       i.addEventListener('mouseout', () => {
         i.childNodes[1].classList.remove('img-darken');
       })
+
+      i.addEventListener('click', () => {
+        console.log(i.id);
+
+        if (i.id == "1") {
+          window.location.href = "project1.html";
+        }
+
+        if (i.id == "2") {
+          window.location.href = "project2.html";
+        }
+
+        if (i.id == "3") {
+          window.location.href = "project3.html";
+        }
+
+      })
+
     });
 
   </script>

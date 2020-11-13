@@ -91,6 +91,15 @@ body {
   text-align: center;
   padding-left: 100px;
   padding-right: 100px;
+  cursor: pointer;
+}
+
+.fill-div {
+  position: absolute;
+  top: 0;
+  display: flex;
+  height: 100%;
+  width: 100%;
 }
 
 .logo-wrapper img{
@@ -106,7 +115,7 @@ body {
 
 .img-text-wrapper:hover .subtitle{
   font-weight: 600;
-  color: lightseagreen;
+  color: #4c97d9;
 }
 
 .img-darken {
