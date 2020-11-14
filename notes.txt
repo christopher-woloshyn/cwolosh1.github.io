@@ -1,9 +1,4 @@
 TODO
 
-- Add icon to website tab
-- Update 523 Final Project Info
-- Draw icons and acquire images for each portfolio item
-- Fill in the about section under about.
-- Add separate projects tab and have the main page serve a different function?
-
 - optimize everything for both pc AND mobile.
+  (this might involve rewriting the whole thing)
