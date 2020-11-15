@@ -133,6 +133,8 @@ body {
 .two-column-wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  font-size: 20px;
+  line-height: 1.5;
 }
 
 .profile-image-wrapper img {
@@ -140,7 +142,7 @@ body {
 }
 
 .profile-content-wrapper {
-  padding: 30px 120px 30px 60px;
+  padding: 30px 60px 30px 60px;
   text-align: justify;
   color: #aaaaaa;
 }
@@ -151,18 +153,59 @@ body {
 
 /* Blog Styles */
 
+.one-column-wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-left: 33%;
+  margin-right: 33%;
+  font-size: 25px;
+  line-height: 1.5;
+}
+
+.blog-link-wrapper {
+  margin-bottom: 10px;
+}
+
+.blog-link-wrapper a {
+  text-decoration: none;
+  color: #aaaaaa
+}
+
+.blog-link-wrapper a:hover {
+  color: #4c97d9;
+}
+
 .blog-image-wrapper img {
   width: 100%;
+  padding-top: 30px;
 }
 
-.blog-content-wrapper h1 {
-  color: #4c97d9;
-  padding: 0 30px 0 30px
-}
-
-.blog-content-wrapper p {
-  padding: 0 30px 0 30px;
+.image-caption {
   color: #aaaaaa;
+  font-size: 0.8em;
+  line-height: 1;
+  padding-bottom: 30px;
+}
+
+.blog-contents img {
+  width: 100%
+}
+
+.blog-contents h1 {
+  color: #4c97d9;
+}
+
+.blog-post h1 {
+  color: #4c97d9;
+}
+
+.blog-post h2 {
+  color: #4c97d9;
+}
+
+.blog-post p {
+  color: #aaaaaa;
+  padding-bottom: 20px
 }
 
 /* Painting Styles */
