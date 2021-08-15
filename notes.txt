@@ -1,4 +1,0 @@
-TODO
-
-- optimize everything for both pc AND mobile.
-  (this might involve rewriting the whole thing)
