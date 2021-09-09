@@ -1,4 +1,5 @@
-import { useState } from "react";
+import { useState, Fragment } from "react";
+import { CSSTransition } from 'react-transition-group';
 
 function NavItem(props) {
 
@@ -6,12 +7,22 @@ function NavItem(props) {
 
     // TODO: Add dropdown animation when the dropdown menu is true.
     return (
-            <li className="nav-item">
-                <a className="icon-button" href="#" onClick={() => setOpen(!open)}>
-                    { props.icon }{ props.title }
-                </a>
-                { open && props.children}  
-            </li>
+        <Fragment>
+            <CSSTransition in={open} classNames="nav-item">
+                <li
+                    onMouseLeave={() => setOpen(false)}
+                >
+                    <a 
+                        className="icon-button"
+                        href="#"
+                        onMouseEnter={() => setOpen(true)}
+                    >
+                        { props.title }{ props.icon }
+                    </a>
+                    { open && props.children }
+                </li>
+            </CSSTransition>
+        </Fragment>
     );
 }
 

@@ -1,18 +1,83 @@
-import DropdownMenu from "./DropdownMenu";
 import NavItem from "./NavItem";
-import {ReactComponent as CaretIcon} from './../icons/caret.svg'
+import DropdownMenu from "./DropdownMenu";
+import DropdownItem from "./DropdownItem";
+
+import {ReactComponent as CaretIcon} from './../icons/caret.svg';
+import { ReactComponent as InstagramIcon } from './../icons/instagram-logo.svg';
+import { ReactComponent as LinkedinIcon } from './../icons/linkedin-logo.svg';
+import { ReactComponent as YoutubeIcon } from './../icons/youtube-logo.svg';
+import { ReactComponent as GithubIcon } from './../icons/github-logo.svg';
 
 function Navbar() {
     return (
         <nav className="navbar">
-                <ul className="navbar-nav">
-                    <a className="name" href="#">CHRISTOPHER WOLOSHYN</a>
-                    <NavItem icon="" title="Notes"/>
-                    <NavItem icon="" title="About"/>
-                    <NavItem icon={ <CaretIcon /> } title="Social Media">
-                        <DropdownMenu />
-                    </NavItem>
-                </ul>
+            <a className="name" href="#">CHRISTOPHER WOLOSHYN</a>
+            <ul className="navbar-nav">
+                <NavItem icon="" title="About"/>
+                <NavItem icon={ <CaretIcon /> } title="Projects">
+                    <div className="dropdown">
+                        <DropdownItem
+                                    leftIcon={<CaretIcon />}
+                                    href="#"
+                                    title="Painting"
+                            />
+                            <DropdownItem
+                                    leftIcon={<CaretIcon />}
+                                    href="#"
+                                    title="Fitness"
+                            />
+                            <DropdownItem
+                                    leftIcon={<CaretIcon />}
+                                    href="#"
+                                    title="DnD"
+                            />
+                    </div>
+                </NavItem>
+                <NavItem icon={ <CaretIcon /> } title="Interests">
+                    <div className="dropdown">
+                        <DropdownItem
+                                leftIcon={<CaretIcon />}
+                                href="#"
+                                title="Painting"
+                        />
+                        <DropdownItem
+                                leftIcon={<CaretIcon />}
+                                href="#"
+                                title="Fitness"
+                        />
+                        <DropdownItem
+                                leftIcon={<CaretIcon />}
+                                href="#"
+                                title="DnD"
+                        />
+                    </div>
+                </NavItem>
+                <NavItem icon={ <CaretIcon /> } title="Social Media">
+                    <div className="dropdown">
+                        <DropdownItem
+                            leftIcon={<LinkedinIcon />}
+                            href="https://www.linkedin.com/in/cwolosh1/"
+                            title="LinkedIn"
+                        />
+                        <DropdownItem
+                            leftIcon={<GithubIcon />}
+                            href="https://github.com/cwolosh1"
+                            title="GitHub"
+                        />
+                        <DropdownItem
+                            leftIcon={<InstagramIcon />}
+                            href="https://www.instagram.com/cwolosh1/"
+                            title="Instagram"
+                        />
+                        <DropdownItem
+                            leftIcon={<YoutubeIcon />}
+                            href="https://www.youtube.com/channel/UCZUxdRNLYnvBMx6sGYnhkfw"
+                            title="YouTube"
+                        />
+                    </div>
+                </NavItem>
+                {/* <NavItem icon="" title="Contact Me" /> */}
+            </ul>
         </nav>
     );
 }

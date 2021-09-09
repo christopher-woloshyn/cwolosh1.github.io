@@ -6,9 +6,10 @@ import { ReactComponent as YoutubeIcon } from './../icons/youtube-logo.svg'
 import { ReactComponent as GithubIcon } from './../icons/github-logo.svg'
 
 function DropdownMenu() {
-
     return (
+        
             <div className="dropdown">
+                
                 <DropdownItem
                     leftIcon={<LinkedinIcon />}
                     href="https://www.linkedin.com/in/cwolosh1/"
