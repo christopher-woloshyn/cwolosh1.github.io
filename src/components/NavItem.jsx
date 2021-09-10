@@ -8,7 +8,7 @@ function NavItem(props) {
     // TODO: Add dropdown animation when the dropdown menu is true.
     return (
         <Fragment>
-            <CSSTransition in={open} classNames="nav-item">
+            <CSSTransition in={open} timeout={300} classNames="nav-item">
                 <li
                     onMouseLeave={() => setOpen(false)}
                 >

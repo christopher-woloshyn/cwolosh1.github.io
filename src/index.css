@@ -15,10 +15,10 @@ code {
   --shadow-color: #090909;
   --bg: #121212;
   --bg-layer1: #181818;
-  --bg-layer2: #1e1e1e;
+  --bg-layer2: #1a1a1a;
   --accent1: #99CAEC;
   --accent2: #EC99C9;
-  --text-color: #cccccc;
+  --text-color: #ddd;
   --nav-size: 100px;
   --border: 1px solid #99CAEC;
   --border-radius: 10px;
@@ -69,11 +69,23 @@ a {
 }
 /* <li> */
 .nav-item-enter-done {
-  display: flex;
   transition: 300ms;
 }
 .nav-item-exit-done {
-  display: flex;
+  transition: 300ms;
+}
+.nav-item-enter-done > .icon-button {
+  color: var(--accent1);
+}
+.nav-item-enter-done > .icon-button::before {
+  color: var(--accent1);
+  transform: scaleX(1)
+}
+.nav-item-enter-done > .icon-button svg {
+  fill: var(--accent1);
+  transform: rotate(-180deg)
+}
+.nav-item-exit-done {
   transition: 300ms;
 }
 
@@ -113,9 +125,8 @@ a {
   background-color: var(--accent1);
   transform: scaleX(0);
   transform-origin: top left;
-  transition: transform 0.3s ease-in-out;
+  transition: 300ms ease-in-out;
 }
-
 .icon-button:hover::before {
   transform: scaleX(1);
 }
@@ -125,7 +136,6 @@ a {
   position: absolute;
   top: 80px;
   width: auto;
-  /* padding: 80px 20px 20px 20px; */
   background-color: var(--bg-layer2);
   border-radius: var(--border-radius);
   filter: drop-shadow(0px 0px 3px var(--shadow-color));
@@ -162,10 +172,10 @@ a {
 }
 
 /* CSSTransition classes  */
-.menu-primary-enter {
+/* .nav-item-enter-done > .dropdown {
   position: absolute;
-  transform: translateX(-110%);
-}
+  transform: translateY(-110%);
+} */
 .menu-primary-enter-active {
   transform: translateX(0%);
   transition: all var(--speed) ease;

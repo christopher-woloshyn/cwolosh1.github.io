@@ -14,12 +14,12 @@ function Navbar() {
             <a className="name" href="#">CHRISTOPHER WOLOSHYN</a>
             <ul className="navbar-nav">
                 <NavItem icon="" title="About"/>
-                <NavItem icon={ <CaretIcon /> } title="Projects">
+                <NavItem icon={ <CaretIcon /> } title="Interests">
                     <div className="dropdown">
                         <DropdownItem
                                     leftIcon={<CaretIcon />}
                                     href="#"
-                                    title="Painting"
+                                    title="Urban Planning"
                             />
                             <DropdownItem
                                     leftIcon={<CaretIcon />}
@@ -29,30 +29,35 @@ function Navbar() {
                             <DropdownItem
                                     leftIcon={<CaretIcon />}
                                     href="#"
+                                    title="Painting"
+                            />
+                            <DropdownItem
+                                    leftIcon={<CaretIcon />}
+                                    href="#"
                                     title="DnD"
                             />
                     </div>
                 </NavItem>
-                <NavItem icon={ <CaretIcon /> } title="Interests">
+                <NavItem icon={ <CaretIcon /> } title="Projects">
                     <div className="dropdown">
                         <DropdownItem
                                 leftIcon={<CaretIcon />}
                                 href="#"
-                                title="Painting"
+                                title="Project 1"
                         />
                         <DropdownItem
                                 leftIcon={<CaretIcon />}
                                 href="#"
-                                title="Fitness"
+                                title="Project 2"
                         />
                         <DropdownItem
                                 leftIcon={<CaretIcon />}
                                 href="#"
-                                title="DnD"
+                                title="Project 3"
                         />
                     </div>
                 </NavItem>
-                <NavItem icon={ <CaretIcon /> } title="Social Media">
+                <NavItem icon={ <CaretIcon /> } title="Connect">
                     <div className="dropdown">
                         <DropdownItem
                             leftIcon={<LinkedinIcon />}
