@@ -19,7 +19,7 @@ code {
   --accent1: #99CAEC;
   --accent2: #EC99C9;
   --text-color: #ddd;
-  --nav-size: 100px;
+  --nav-size: 90px;
   --border: 1px solid #99CAEC;
   --border-radius: 10px;
   --speed: 500ms; 
@@ -85,9 +85,6 @@ a {
   fill: var(--accent1);
   transform: rotate(-180deg)
 }
-.nav-item-exit-done {
-  transition: 300ms;
-}
 
 /* Icon Button */
 .icon-button {
@@ -133,15 +130,17 @@ a {
 
 /* Dropdown Menu */
 .dropdown {
+  display: flex;
+  flex-direction: column;
   position: absolute;
-  top: 80px;
-  width: auto;
+  top: 85px;
   background-color: var(--bg-layer2);
   border-radius: var(--border-radius);
+  margin-right: 120px;
   filter: drop-shadow(0px 0px 3px var(--shadow-color));
   padding: 1rem;
-  overflow: hidden;
-  transition: height var(--speed) ease;
+  opacity: 0;
+  transition: var(--speed) ease-in-out;
 }
 .menu-button {
   height: 30px;
@@ -172,34 +171,25 @@ a {
 }
 
 /* CSSTransition classes  */
-/* .nav-item-enter-done > .dropdown {
+.nav-item-exit.nav-item-exit-active > .dropdown{
   position: absolute;
-  transform: translateY(-110%);
-} */
-.menu-primary-enter-active {
-  transform: translateX(0%);
-  transition: all var(--speed) ease;
+  top: 70px;
+  opacity: 0;
 }
-.menu-primary-exit {
+.nav-item-enter-done > .dropdown {
   position: absolute;
+  top: 80px;
+  opacity: 1;
+  transition: 300ms ease-in;
 }
-.menu-primary-exit-active {
-  transform: translateX(-110%);
-  transition: all var(--speed) ease;
+.nav-item-enter.nav-item-enter-active > .dropdown{
+  position: absolute;
+  top: 80px;
+  opacity: 1;
+  transition: 300ms ease-in;
 }
-
-
-.menu-secondary-enter {
-  transform: translateX(110%);
-}
-.menu-secondary-enter-active {
-  transform: translateX(0%);
-  transition: all var(--speed) ease;
-}
-.menu-secondary-exit {
-  stroke: var(--bg);
-}
-.menu-secondary-exit-active {
-  transform: translateX(110%);
-  transition: all var(--speed) ease;
+.nav-item-exit-done > .dropdown {
+  position: absolute;
+  top: 70px;
+  opacity: 0;
 }

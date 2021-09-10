@@ -1,5 +1,4 @@
 import NavItem from "./NavItem";
-import DropdownMenu from "./DropdownMenu";
 import DropdownItem from "./DropdownItem";
 
 import {ReactComponent as CaretIcon} from './../icons/caret.svg';
@@ -13,7 +12,7 @@ function Navbar() {
         <nav className="navbar">
             <a className="name" href="#">CHRISTOPHER WOLOSHYN</a>
             <ul className="navbar-nav">
-                <NavItem icon="" title="About"/>
+                <NavItem title="About" />
                 <NavItem icon={ <CaretIcon /> } title="Interests">
                     <div className="dropdown">
                         <DropdownItem
@@ -38,25 +37,7 @@ function Navbar() {
                             />
                     </div>
                 </NavItem>
-                <NavItem icon={ <CaretIcon /> } title="Projects">
-                    <div className="dropdown">
-                        <DropdownItem
-                                leftIcon={<CaretIcon />}
-                                href="#"
-                                title="Project 1"
-                        />
-                        <DropdownItem
-                                leftIcon={<CaretIcon />}
-                                href="#"
-                                title="Project 2"
-                        />
-                        <DropdownItem
-                                leftIcon={<CaretIcon />}
-                                href="#"
-                                title="Project 3"
-                        />
-                    </div>
-                </NavItem>
+                <NavItem icon="" title="Projects"/>
                 <NavItem icon={ <CaretIcon /> } title="Connect">
                     <div className="dropdown">
                         <DropdownItem
@@ -81,7 +62,6 @@ function Navbar() {
                         />
                     </div>
                 </NavItem>
-                {/* <NavItem icon="" title="Contact Me" /> */}
             </ul>
         </nav>
     );
