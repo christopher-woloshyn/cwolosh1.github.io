@@ -2,10 +2,16 @@ import NavItem from "./NavItem";
 import DropdownItem from "./DropdownItem";
 
 import {ReactComponent as CaretIcon} from './../icons/caret.svg';
+
 import { ReactComponent as InstagramIcon } from './../icons/instagram-logo.svg';
 import { ReactComponent as LinkedinIcon } from './../icons/linkedin-logo.svg';
 import { ReactComponent as YoutubeIcon } from './../icons/youtube-logo.svg';
 import { ReactComponent as GithubIcon } from './../icons/github-logo.svg';
+
+import { ReactComponent as BuildingIcon } from './../icons/building-icon.svg';
+import { ReactComponent as DumbbellIcon } from './../icons/dumbbell-icon.svg';
+import { ReactComponent as PaintbrushIcon } from './../icons/paintbrush-icon.svg';
+import { ReactComponent as D20Icon } from './../icons/d20-icon.svg';
 
 function Navbar() {
     return (
@@ -16,22 +22,22 @@ function Navbar() {
                 <NavItem icon={ <CaretIcon /> } title="Interests">
                     <div className="dropdown">
                         <DropdownItem
-                                    leftIcon={<CaretIcon />}
+                                    leftIcon={<BuildingIcon />}
                                     href="#"
                                     title="Urban Planning"
                             />
                             <DropdownItem
-                                    leftIcon={<CaretIcon />}
+                                    leftIcon={<DumbbellIcon />}
                                     href="#"
                                     title="Fitness"
                             />
                             <DropdownItem
-                                    leftIcon={<CaretIcon />}
+                                    leftIcon={<PaintbrushIcon />}
                                     href="#"
                                     title="Painting"
                             />
                             <DropdownItem
-                                    leftIcon={<CaretIcon />}
+                                    leftIcon={<D20Icon />}
                                     href="#"
                                     title="DnD"
                             />
