@@ -33,29 +33,28 @@ ul {
 
 a {
   color: var(--text-color);
-  text-decoration: none;;
+  text-decoration: none;
 }
 
 /* Top Navigation Bar */
 /* <nav> */
 .navbar {
-  height: var(--nav-size);
   background-color: var(--bg-layer1);
-  font-size: 18px;
+  height: var(--nav-size);
+  font-size: 14px;
   margin: 5px 10px 0px 10px;
-  padding-left: 2rem;
-  padding-right: 2rem;
   border-radius: var(--border-radius);
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   filter: drop-shadow(0px 0px 8px var(--shadow-color));
 }
-
 /* My Name */
 .name{
   display: flex;
   align-items: center;
   width: 8rem;
+  margin-right: 10%;
+  margin-left: 1.5rem;
   transition: var(--speed);
 }
 .name:hover {
@@ -148,7 +147,7 @@ a {
   align-items: center;
   border-radius: var(--border-radius);
   transition: background var(--speed);
-  padding: 1rem;
+  padding: 0.5rem;
   margin-right: 0.75rem;
   transition: 300ms;
 }
