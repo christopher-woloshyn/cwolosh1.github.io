@@ -10,18 +10,19 @@ import { ReactComponent as GithubIcon } from './../icons/github-logo.svg';
 
 import ApartmentIcon from '@material-ui/icons/Apartment';
 import FitnessCenterIcon from '@material-ui/icons/FitnessCenter';
-// import { ReactComponent as BuildingIcon } from './../icons/building-icon.svg';
-// import { ReactComponent as DumbbellIcon } from './../icons/dumbbell-icon.svg';
 import { ReactComponent as PaintbrushIcon } from './../icons/paintbrush-icon.svg';
 import { ReactComponent as D20Icon } from './../icons/d20-icon.svg';
+
+import { Link } from 'react-router-dom';
 
 function Navbar() {
     return (
         <nav className="navbar">
-            <a className="name" href="#">CHRISTOPHER WOLOSHYN</a>
+            <Link className="name" to="/">CHRISTOPHER WOLOSHYN</Link>
             <ul className="navbar-nav">
-                <NavItem title="About" />
-                <NavItem icon={ <ArrowDropDownIcon /> } title="Interests">
+                <NavItem title="About" to="/about" />
+                <NavItem title="Interests" to="/interests" />
+                {/* <NavItem icon={ <ArrowDropDownIcon /> } title="Interests" to="#">
                     <div className="dropdown">
                         <DropdownItem
                                     leftIcon={<ApartmentIcon />}
@@ -44,9 +45,9 @@ function Navbar() {
                                     title="DnD"
                             />
                     </div>
-                </NavItem>
-                <NavItem icon="" title="Projects"/>
-                <NavItem icon={ <ArrowDropDownIcon /> } title="Connect">
+                </NavItem> */}
+                <NavItem icon="" title="Projects" to="/projects" />
+                <NavItem icon={ <ArrowDropDownIcon /> } title="Connect" to="#">
                     <div className="dropdown">
                         <DropdownItem
                             leftIcon={<LinkedinIcon />}

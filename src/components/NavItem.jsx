@@ -1,5 +1,6 @@
 import { useState, Fragment } from "react";
 import { CSSTransition } from 'react-transition-group';
+import { Link } from 'react-router-dom';
 
 function NavItem(props) {
 
@@ -15,20 +16,19 @@ function NavItem(props) {
         setTimeout(() => {setOpen(false)}, 300);
     }
 
-    // TODO: Add dropdown animation when the dropdown menu is true.
     return (
         <Fragment>
             <CSSTransition in={hover} timeout={300} classNames="nav-item">
                 <li
                     onMouseLeave={HandleMouseLeave}
                 >
-                    <a 
+                    <Link 
                         className="icon-button"
-                        href="#"
+                        to={props.to}
                         onMouseEnter={HandleMouseEnter}
                     >
                         { props.title }{ props.icon }
-                    </a>
+                    </Link>
                     { open && props.children }
                 </li>
             </CSSTransition>

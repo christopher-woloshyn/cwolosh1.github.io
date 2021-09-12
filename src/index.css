@@ -2,6 +2,7 @@ body {
   margin: 0;
   background: #121212;
   font-family: 'Urbanist', sans-serif;
+  color: #ddd;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
