@@ -8,20 +8,22 @@ function NavItem(props) {
     const [hover, setHover] = useState(false);
 
     const HandleMouseEnter = () => {
+        if (open) {
+            setHover(true);
+            setTimeout(() => {setOpen(true)}, 300);
+        }
         setHover(true);
         setOpen(true);
     }
     const HandleMouseLeave = () => {
         setHover(false);
-        setTimeout(() => {setOpen(false)}, 300);
+        setTimeout(() => {setOpen(false)}, 300);        
     }
 
     return (
         <Fragment>
-            <CSSTransition in={hover} timeout={300} classNames="nav-item">
-                <li
-                    onMouseLeave={HandleMouseLeave}
-                >
+            <CSSTransition in={hover} timeout={0} classNames="nav-item">
+                <li onMouseLeave={HandleMouseLeave}>
                     <Link 
                         className="icon-button"
                         to={props.to}
