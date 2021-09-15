@@ -8,11 +8,6 @@ import { ReactComponent as LinkedinIcon } from './../icons/linkedin-logo.svg';
 import { ReactComponent as YoutubeIcon } from './../icons/youtube-logo.svg';
 import { ReactComponent as GithubIcon } from './../icons/github-logo.svg';
 
-// import ApartmentIcon from '@material-ui/icons/Apartment';
-// import FitnessCenterIcon from '@material-ui/icons/FitnessCenter';
-// import { ReactComponent as PaintbrushIcon } from './../icons/paintbrush-icon.svg';
-// import { ReactComponent as D20Icon } from './../icons/d20-icon.svg';
-
 import { Link } from 'react-router-dom';
 
 function Navbar() {
@@ -22,30 +17,6 @@ function Navbar() {
             <ul className="navbar-nav">
                 <NavItem title="About" to="/about" />
                 <NavItem title="Interests" to="/interests" />
-                {/* <NavItem icon={ <ArrowDropDownIcon /> } title="Interests" to="#">
-                    <div className="dropdown">
-                        <DropdownItem
-                                    leftIcon={<ApartmentIcon />}
-                                    href="#"
-                                    title="Urban Planning"
-                            />
-                            <DropdownItem
-                                    leftIcon={<FitnessCenterIcon />}
-                                    href="#"
-                                    title="Fitness"
-                            />
-                            <DropdownItem
-                                    leftIcon={<PaintbrushIcon />}
-                                    href="#"
-                                    title="Painting"
-                            />
-                            <DropdownItem
-                                    leftIcon={<D20Icon />}
-                                    href="#"
-                                    title="DnD"
-                            />
-                    </div>
-                </NavItem> */}
                 <NavItem icon="" title="Projects" to="/projects" />
                 <NavItem icon={ <ArrowDropDownIcon /> } title="Connect" to="#">
                     <div className="dropdown">

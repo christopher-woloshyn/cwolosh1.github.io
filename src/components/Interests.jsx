@@ -1,4 +1,8 @@
 import { Fragment } from "react";
+// import ApartmentIcon from '@material-ui/icons/Apartment';
+// import FitnessCenterIcon from '@material-ui/icons/FitnessCenter';
+// import { ReactComponent as PaintbrushIcon } from './../icons/paintbrush-icon.svg';
+// import { ReactComponent as D20Icon } from './../icons/d20-icon.svg';
 
 const Interests = () => {
     return (

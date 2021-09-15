@@ -17,7 +17,12 @@ const Home = () => {
                 <div className="button-container">
                 <Link className="projects-button" to="/projects">View my Projects</Link>
                 </div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, nemo nisi animi blanditiis et excepturi consequuntur quis laborum maiores, id totam quae consequatur ratione veniam? Voluptate consectetur a aliquid distinctio.</p>
+                <p>
+                    I'm working hard to get my website fully operational.
+                    Many pages are incomplete, so for the time being, please
+                    enjoy this landing page, and keep checking back for more
+                    content coming soon!
+                </p>
             </div>
         </div>
     );

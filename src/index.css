@@ -160,7 +160,7 @@ a {
   opacity: 0;
 }
 
-/* Content Body */
+/* Home Page */
 .content-body {
   display: flex;
   flex-direction: column;
@@ -217,6 +217,31 @@ a {
 }
 .projects-button:hover {
   background-color: var(--accent2);
+}
+
+/* UnderConstruction Page */
+.gear-icon {
+  width: 60%;
+  padding: 4em;
+  animation: rotation 15s infinite ease-out;
+}
+.under-construction {
+  width: clamp(400px, 60%, 800px);
+  color: var(--accent1);
+  text-align: center;
+}
+@keyframes rotation {
+  0% {transform: rotate(0deg);}
+  10% {transform: rotate(36deg);}
+  20% {transform: rotate(72deg);}
+  30% {transform: rotate(108deg);}
+  40% {transform: rotate(144deg);}
+  50% {transform: rotate(180deg);}
+  60% {transform: rotate(216deg);}
+  70% {transform: rotate(252deg);}
+  80% {transform: rotate(288deg);}
+  90% {transform: rotate(324deg);}
+  100% {transform: rotate(360deg);}
 }
 
 /* Scroll Bar */
