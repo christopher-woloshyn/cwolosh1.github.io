@@ -1,23 +1,58 @@
-import { Fragment } from "react";
+import { Link } from 'react-router-dom';
 
 const Projects = () => {
     return (
-        <Fragment>
-            <h2>HSR.health</h2>
-            <ul>
-                <li>Economic Risk Index</li>
-                <li>Business Risk Index</li>
-                <li>Office Safety Index</li>
-                <li>School Safety Index</li>
-                <li>Flight Safety Index</li>
-            </ul>
-            <h2>Binghamton University</h2>
-            <ul>
-                <li>Neural Network Hyperparameter Optimization with Genetic Algorithms</li>
-                <li>Support Vector Machine VS. Deep Learning on Speech Emotion Classification</li>
-                <li>COVID-19 Network Transmission Analysis</li>
-            </ul>
-        </Fragment>
+        <div className="content-body">
+            <a target="_blank" href="https://hsr.health/">
+                <h1 className="title-with-link">HSR.health</h1>
+            </a>
+            <div className="paragraph-wrapper">
+                <h2>Flight Safety Index</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime voluptatem iste quidem et aliquam alias sit a dolore tenetur voluptatibus magnam molestias atque doloremque est, dolores possimus consequatur aut eaque.</p>
+                <h2>School Safety Index</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime voluptatem iste quidem et aliquam alias sit a dolore tenetur voluptatibus magnam molestias atque doloremque est, dolores possimus consequatur aut eaque.</p>
+                <h2>Economic Risk Index</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime voluptatem iste quidem et aliquam alias sit a dolore tenetur voluptatibus magnam molestias atque doloremque est, dolores possimus consequatur aut eaque.</p>
+                <h2>Business Risk Index</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime voluptatem iste quidem et aliquam alias sit a dolore tenetur voluptatibus magnam molestias atque doloremque est, dolores possimus consequatur aut eaque.</p>
+            </div>
+            <h1>Binghamton University</h1>
+            <div className="paragraph-wrapper-with-button">
+                <h2>Neural Network Hyperparamter Optimization with Evolutionary Algorithms</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime voluptatem iste quidem et aliquam alias sit a dolore tenetur voluptatibus magnam molestias atque doloremque est, dolores possimus consequatur aut eaque.</p>
+                <div className="button-container">
+                    <a
+                        className="projects-button"
+                        target="_blank"
+                        href="https://github.com/cwolosh1/hyperparameter-optimization"
+                    >
+                        View on GitHub
+                    </a>
+                </div>
+                <h2>Support Vector Machines vs. Deep Learning on Speech Emotion Classification</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime voluptatem iste quidem et aliquam alias sit a dolore tenetur voluptatibus magnam molestias atque doloremque est, dolores possimus consequatur aut eaque.</p>
+                <div className="button-container">
+                    <a
+                        className="projects-button"
+                        target="_blank"
+                        href="https://github.com/cwolosh1/emotion-classification"
+                    >
+                        View on GitHub
+                    </a>
+                </div>
+                <h2>COVID-19 Network Epidemic Modeling and Analysis</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime voluptatem iste quidem et aliquam alias sit a dolore tenetur voluptatibus magnam molestias atque doloremque est, dolores possimus consequatur aut eaque.</p>
+                <div className="button-container">
+                    <a
+                        className="projects-button"
+                        target="_blank"
+                        href="https://github.com/cwolosh1/social-distancing"
+                    >
+                        View on GitHub
+                    </a>
+                </div>
+            </div>
+        </div>
     );
 }
  

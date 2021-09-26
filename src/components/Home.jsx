@@ -7,7 +7,7 @@ const Home = () => {
         <div className="content-body">
             <h1>Hi, I'm Christopher</h1>
             <img src={Headshot} alt="Headshot of me!"></img>
-            <div className="paragraph-wrapper">
+            <div className="paragraph-wrapper-with-button">
                 <p>
                     I'm a Software Engineer with a strong background in Data
                     Science and Mathematics. I have an applied skillset building

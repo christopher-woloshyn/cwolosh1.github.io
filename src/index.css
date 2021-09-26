@@ -11,6 +11,7 @@
   --nav-size: 90px;
   --border-radius: 20px;
   --speed: 300ms;
+  --main-width: clamp(500px, 75%, 900px);
 }
 body {
   background: #121212;
@@ -171,11 +172,15 @@ a {
 .content-body h1 {
   margin-top: 1em;
   color: var(--accent1);
+  transition: var(--speed);
+}
+.content-body .title-with-link:hover {
+  color: var(--accent2);
 }
 .content-body img {
   position: relative;
   z-index: -1;
-  width: clamp(400px, 60%, 800px);
+  width: var(--main-width);
   border-radius: 50%;
   filter: drop-shadow(0px 0px 12px var(--shadow-color));
   margin: 1rem;
@@ -184,7 +189,8 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  width: clamp(400px, 60%, 800px);
+  z-index: -1;
+  width: var(--main-width);
   background-color: var(--bg-layer1);
   padding: 0 1em 0 1em;
   margin: 1em;
@@ -215,7 +221,24 @@ a {
   filter: drop-shadow(0px 0px 8px var(--shadow-color));
   transition: 300ms;
 }
-.projects-button:hover {
+.paragraph-wrapper-with-button {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: var(--main-width);
+  background-color: var(--bg-layer1);
+  padding: 0 1em 0 1em;
+  margin: 1em;
+  font-size: 18px;
+  border-radius: var(--border-radius);
+  filter: drop-shadow(0px 0px 12px var(--shadow-color));
+}
+.paragraph-wrapper-with-button p {
+  text-indent: 2em;
+  text-align: justify;
+  line-height: 1.5;
+}
+.paragraph-wrapper-with-button .projects-button:hover {
   background-color: var(--accent2);
 }
 
@@ -226,7 +249,7 @@ a {
   animation: rotation 15s infinite ease-out;
 }
 .under-construction {
-  width: clamp(400px, 60%, 800px);
+  width: var(--main-width);
   color: var(--accent1);
   text-align: center;
 }

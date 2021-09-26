@@ -15,7 +15,6 @@ function Navbar() {
         <nav className="navbar">
             <Link className="name" to="/">CHRISTOPHER WOLOSHYN</Link>
             <ul className="navbar-nav">
-                <NavItem title="About" to="/about" />
                 <NavItem title="Interests" to="/interests" />
                 <NavItem icon="" title="Projects" to="/projects" />
                 <NavItem icon={ <ArrowDropDownIcon /> } title="Connect" to="#">
