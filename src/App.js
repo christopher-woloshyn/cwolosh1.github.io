@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Home from './components/Home';
-import Interests from './components/Interests';
+// import Interests from './components/Interests';
 import Projects from './components/Projects';
 import UnderContruction from './components/UnderContruction';
 import NotFound from './components/NotFound';
