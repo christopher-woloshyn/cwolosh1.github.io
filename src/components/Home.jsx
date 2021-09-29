@@ -6,7 +6,7 @@ const Home = () => {
     return (
         <div className="content-body">
             <h1>Hi, I'm Christopher</h1>
-            <img src={Headshot} alt="Headshot of me!"></img>
+            <img src={Headshot} alt="Headshot of me!" />
             <div className="content-wrapper">
                 <p>
                     I'm a Machine Learning Engineer with a strong background
@@ -18,7 +18,9 @@ const Home = () => {
                     turn my passion into action!
                 </p>
                 <div className="button-container">
-                <Link className="projects-button" to="/projects">View my Projects</Link>
+                    <Link className="projects-button" to="/projects">
+                        View my Projects
+                    </Link>
                 </div>
                 <p>
                     I'm working hard to get my website fully operational.

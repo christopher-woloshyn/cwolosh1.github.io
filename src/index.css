@@ -190,7 +190,7 @@ a {
   z-index: -1;
   width: var(--main-width);
   background-color: var(--bg-layer1);
-  padding: 1em 2em 2em 2em;
+  padding: 1em 2em 1em 2em;
   margin: 1em;
   font-size: 18px;
   border-radius: var(--border-radius);
@@ -200,6 +200,14 @@ a {
   text-indent: 2em;
   text-align: justify;
   line-height: 1.5;
+}
+.paragraph-wrapper ul {
+  list-style: circle;
+  padding: 1em 2em 0 2em;
+  text-indent: 1em;
+}
+.paragraph-wrapper li {
+  padding-bottom: 1em;
 }
 .button-container {
   display: flex;
