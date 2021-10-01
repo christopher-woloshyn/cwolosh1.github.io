@@ -1,7 +1,7 @@
 {
-  "name": "cwolosh1.github.io",
-  "homepage": "https://myusername.github.io",
-  "version": "0.1.0",
+  "name": "woloshyn.xyz",
+  "homepage": "https://woloshyn.xyz",
+  "version": "0.3.0",
   "private": true,
   "dependencies": {
     "@material-ui/core": "^4.12.3",
