@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import Headshot from './../images/headshot-1.jpg'
+import Headshot from './../images/jojo-1.jpg'
 
 
 const Home = () => {

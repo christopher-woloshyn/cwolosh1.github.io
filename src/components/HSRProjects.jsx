@@ -12,7 +12,7 @@ const HSRProjects = () => {
             </p>
             <p>
                 This work has been filed for U.S. patent: U.S. CIP App. No.:
-                17/364,677. I the lead engineer on the project and a listed
+                17/364,677. I am the lead engineer on the project and a listed
                 inventor on the patent application.
             </p>
             <h2>School Safety Index</h2>
