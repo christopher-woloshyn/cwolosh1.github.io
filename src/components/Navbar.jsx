@@ -13,8 +13,8 @@ import { Link } from 'react-router-dom';
 function Navbar() {
     return (
         <nav className="navbar">
-            <Link className="name" to="/">CHRISTOPHER WOLOSHYN</Link>
-            <ul className="navbar-nav">
+            <Link className="navbar-left" to="/">CHRISTOPHER WOLOSHYN</Link>
+            <ul className="navbar-right">
                 <NavItem title="Interests" to="/interests" />
                 <NavItem icon="" title="Projects" to="/projects" />
                 <NavItem icon={ <ArrowDropDownIcon /> } title="Connect" to="#">
