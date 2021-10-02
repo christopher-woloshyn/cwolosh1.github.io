@@ -1,4 +1,5 @@
 import { HashRouter as Router, Route, Switch } from 'react-router-dom';
+import ScrollToTop from './components/ScrollToTop';
 import Navbar from './components/Navbar';
 import Home from './components/Home';
 // import Interests from './components/Interests';
@@ -10,6 +11,7 @@ import NotFound from './components/NotFound';
 function App() {
     return (
         <Router>
+            <ScrollToTop />
             <Navbar />
             <Switch>
                 <Route exact path="/">
